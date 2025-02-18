@@ -22,8 +22,10 @@ you do not need to setup a local server to run the project.
 
 ## Testing
 
-To run the tests for the project, run the following command:
+No additional tests were added.
 
-```bash
-npm test
+
+## How to Run
+
+Use ctrl + shift + P and click the "Live Preview: Start Server" option to view the project.
 ```
