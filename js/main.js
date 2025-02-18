@@ -47,3 +47,15 @@ export async function fetchRandomJoke() {
         throw new Error(error.message);
     }
 }
+
+export function userAlert() {
+    const form = document.getElementById('radioForm');
+    const userOption = form.querySelector('input[name="option"]:checked');
+    if (userOption) {
+        alert(userOption.value);
+    } else {
+        alert('??? Choose an option ???');
+    }
+}
+
+ 

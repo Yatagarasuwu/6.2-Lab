@@ -1,4 +1,95 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: white; /* I just changed this for background color. Was this wrong? When I tried background-color, this always overrode it.*/
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  border-top: 1mm solid  #709002;  
+  border-bottom: 1mm solid #709002;  
+  background: url('../img/top-image.png') no-repeat top; /* I believe I just add this on top of the other decleration for supporting bad browsers? Thats what the lab says so thats how i did it */
+  background:
+    url('../img/top-image.png') no-repeat top,
+    url('../img/bottom-image.png') no-repeat bottom,
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.4));
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-image: url('../img/logo.png');
+  /* filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));*/
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.8);  
+  border-radius: 50%;  
+}
+
+
+h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%); /* found this not in readings but through google. Centering was annoying me. */
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Used https://www.w3schools.com/howto/howto_css_custom_checkbox.asp  heavily in this section. */
+.content {
+  font-size:  12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 45%;
+  
+}
+
+.column {
+  flex: 1 1 45%;  
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.columnRadio {
+  text-align: right;
+  flex: 1 1 45%;  
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-top: -10%;
+}
+
+/* left over from readings and testing */ 
+.a {
+  background-image: url('../img/top-image.png');
+}
+
+.b {
+  background-image: url('../img/bottom-image.png');
 }
